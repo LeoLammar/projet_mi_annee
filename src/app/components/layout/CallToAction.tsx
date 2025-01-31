@@ -26,7 +26,11 @@ const CallToAction: React.FC = () => {
       {/* Right Section: Image */}
       <div className="md:w-1/2 w-full order-1 md:order-2">
         { 
-          <img src="/media/mentorat-calltoaction.webp" alt="Illustration du mentorat" className="w-full h-auto object-cover rounded-lg shadow-md" />
+          <img 
+            src="/media/mentorat-calltoaction.webp" 
+            alt="Illustration du mentorat" 
+            className="w-full h-auto object-cover rounded-lg shadow-md transition-transform transform hover:scale-105" 
+/>
          }
       </div>
     </div>
