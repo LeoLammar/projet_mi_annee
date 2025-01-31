@@ -53,9 +53,9 @@ const Testimonial: React.FC<TestimonialProps> = ({ text, author, role, imageSrc 
 const TestimonialSection: React.FC = () => {
   const testimonials = [
     {
-      text: "Avec Edu-Link, chaque étudiant de l’ISEN trouve un mentor, un guide et une inspiration pour transformer ses ambitions en réussites.",
-      author: "Pierre Dubois",
-      role: "Spécialiste des mathématiques",
+      text: "Grace à Edu-Link, j'ai pu rencontrer des personnes incroyables, nottament la femme de ma vie. Merci Edu-Link :)",
+      author: "Thomas Roy",
+      role: "Chomeur à mi temps",
       imageSrc: "https://flowbite.s3.amazonaws.com/blocks/marketing-ui/avatars/michael-gouch.png",
     },
     {
