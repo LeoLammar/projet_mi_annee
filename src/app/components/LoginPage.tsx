@@ -47,7 +47,7 @@ const LoginPage: React.FC = () => {
   return (
     <div>
       <Header />
-      <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100">
+      <div className="flex-grow flex items-center justify-center bg-gray-100">
         <div className="w-full max-w-sm bg-white rounded-lg shadow-lg p-6 mt-8">
           <h2 className="text-center text-2xl font-bold mb-6">LOGIN PAGE</h2>
           <form className="space-y-4" onSubmit={handleLogin}>
@@ -90,8 +90,10 @@ const LoginPage: React.FC = () => {
             </button>
           </p>
         </div>
-        <Footer />
       </div>
+
+      <Footer />
+
     </div>
   );
 };

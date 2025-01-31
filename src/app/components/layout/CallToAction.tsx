@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 // Importation directe de l'image
 //import imageSrc from "../../media/mentorat-calltoaction.png";
 
@@ -12,12 +13,14 @@ const CallToAction: React.FC = () => {
           Découvrez notre programme de mentorat conçu pour vous aider à atteindre vos objectifs professionnels et personnels.
           Rejoignez une communauté passionnée et bénéficiez de conseils personnalisés.
         </p>
-        <button
-          type="button"
-          className="text-white bg-[#3C6E71] hover:bg-[#3C6E78] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-2xl text-lg px-6 py-3 text-center dark:bg-[#3C6E71] dark:hover:bg-[#234142] dark:focus:bg-[#234142] transition-all"
-        >
-          Rejoins-nous
-        </button>
+        <Link to="/login">
+          <button
+            type="button"
+            className="text-white bg-[#3C6E71] hover:bg-[#3C6E78] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-2xl text-lg px-6 py-3 text-center dark:bg-[#3C6E71] dark:hover:bg-[#234142] dark:focus:bg-[#234142] transition-all"
+          >
+            Rejoins-nous
+          </button>
+        </Link>
       </div>
 
       {/* Right Section: Image */}

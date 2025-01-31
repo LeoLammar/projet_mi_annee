@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Link } from "react-router-dom";
 
 const Header: React.FC = () => {
   return (
@@ -15,16 +15,18 @@ const Header: React.FC = () => {
 
         {/* Title Section */}
         <div className="text-center flex-1">
-          <Link href="" className="font-bold text-4xl text-[#3C6E71] italic font-poppins">
+          <Link to="/" className="font-bold text-4xl text-[#3C6E71] italic font-poppins">
             Edu-Link
           </Link>
         </div>
 
         {/* Buttons Section */}
         <div className="flex space-x-3 rtl:space-x-reverse">
-          <button type="button" className="text-white bg-[#3C6E71] hover:bg-[#3C6E78]  font-medium rounded-4xl text-sm px-4 py-2 text-center dark:bg-[#3C6E71] dark:hover:bg-[#234142] dark:focus:bg-[#234142]">
-            Rejoins-nous
-          </button>
+          <Link to="/login">
+            <button type="button" className="text-white bg-[#3C6E71] hover:bg-[#3C6E78] font-medium rounded-4xl text-sm px-4 py-2 text-center dark:bg-[#3C6E71] dark:hover:bg-[#234142] dark:focus:bg-[#234142]">
+              Rejoins-nous
+            </button>
+          </Link>
         </div>
       </div>
     </nav>

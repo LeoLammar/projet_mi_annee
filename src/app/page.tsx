@@ -10,25 +10,19 @@ import App from "./components/App";
 import RegisterPage from "./components/RegisterPage";
 import "./globals.css";
 
-
-
-
-
-
 const Page: React.FC = () => {
   return (
     <Router>
       <div className="min-h-screen">
         <Navbar /> {/* Barre de navigation */}
         <Routes>
-          <Route path="/" element={<LoginPage />} />
-          <Route path="/accueil" element={<Accueil />} />
+          <Route path="/" element={<Accueil />} />
+          <Route path="/login" element={<LoginPage />} />
           <Route path="/profil" element={<Profil />} />
           <Route path="/calendar" element={<Calendar />} />
           <Route path="/register" element={<RegisterPage />} />
         </Routes>
-          <App/>
-          
+        <App />
       </div>
     </Router>
   );
