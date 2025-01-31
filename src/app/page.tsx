@@ -9,6 +9,7 @@ import Navbar from "./components/Navbar"; // Optionnel, si tu veux une barre de 
 import App from "./components/App";
 import RegisterPage from "./components/RegisterPage";
 import "./globals.css";
+import Dashboard from "./components/Dashboard";
 
 const Page: React.FC = () => {
   return (
@@ -21,6 +22,7 @@ const Page: React.FC = () => {
           <Route path="/profil" element={<Profil />} />
           <Route path="/calendar" element={<Calendar />} />
           <Route path="/register" element={<RegisterPage />} />
+          <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
         <App />
       </div>

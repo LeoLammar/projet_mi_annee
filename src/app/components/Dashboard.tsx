@@ -1,12 +1,13 @@
 "use client";
 import React from "react";
+import { Link } from "react-router-dom";
 import HeaderWB from "./layout/header-without-button";
 import DashboardCard from "./layout/Dashboardcard";
 import Footer from "./layout/Footer";
 
 
 
-const App: React.FC = () => {
+const Dashboard: React.FC = () => {
   return (
     <div>
       <HeaderWB />
@@ -16,4 +17,4 @@ const App: React.FC = () => {
   );
 }
 
-export default App;
+export default Dashboard;
