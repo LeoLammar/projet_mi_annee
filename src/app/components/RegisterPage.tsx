@@ -127,7 +127,7 @@ const RegisterPage: React.FC = () => {
           <p className="mt-4 text-center">
             Déjà un compte ?{" "}
             <button
-              onClick={() => navigate("/")}
+              onClick={() => navigate("/login")}
               className="text-blue-500 hover:underline"
             >
               Connectez-vous ici

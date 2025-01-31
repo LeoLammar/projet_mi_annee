@@ -45,36 +45,36 @@ const LoginPage: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
       <Header />
       <div className="flex-grow flex items-center justify-center bg-gray-100">
         <div className="w-full max-w-sm bg-white rounded-lg shadow-lg p-6 mt-8">
-          <h2 className="text-center text-2xl font-bold mb-6">LOGIN PAGE</h2>
+          <h2 className="text-center text-2xl font-bold mb-6 text-black">SE CONNECTER</h2>
           <form className="space-y-4" onSubmit={handleLogin}>
             <div>
               <label htmlFor="email" className="block text-sm font-medium text-gray-700">EMAIL</label>
               <input
                 type="email"
                 id="email"
-                className="w-full px-4 py-2 mt-1 border rounded-md bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-400"
-                placeholder="Enter your email"
+                className="w-full px-4 py-2 mt-1 border rounded-md bg-gray-200 focus:outline-none focus:ring-2 focus:ring-[#3C6E71]"
+                placeholder="Votre adresse email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
             </div>
             <div>
-              <label htmlFor="password" className="block text-sm font-medium text-gray-700">PASSWORD</label>
+              <label htmlFor="password" className="block text-sm font-medium text-gray-700">MOT DE PASSE</label>
               <input
                 type="password"
                 id="password"
-                className="w-full px-4 py-2 mt-1 border rounded-md bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-400"
-                placeholder="Enter your password"
+                className="w-full px-4 py-2 mt-1 border rounded-md bg-gray-200 focus:outline-none focus:ring-2 focus:ring-[#3C6E71]"
+                placeholder="Votre mot de passe"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
             </div>
-            <button type="submit" className="w-full bg-blue-500 text-white py-2 rounded-md hover:bg-blue-600 transition">
-              Login
+            <button type="submit" className="w-full bg-[#3C6E71] text-white py-2 rounded-md hover:bg-opacity-80 transition">
+              CONNEXION
             </button>
           </form>
           {message && <p className="mt-4 text-center text-red-500">{message}</p>}
@@ -84,7 +84,7 @@ const LoginPage: React.FC = () => {
             Pas encore de compte ?{" "}
             <button
               onClick={() => navigate("/register")}
-              className="text-blue-500 hover:underline"
+              className="text-[#3C6E71] hover:underline hover:text-white"
             >
               Créez un compte
             </button>
