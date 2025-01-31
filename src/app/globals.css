@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #ffffff;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: black;
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo-size {
+  width: 100px; /* Ajustez la largeur selon vos besoins */
+  height: auto; /* Maintient le ratio d'aspect */
+}
+
+
+
