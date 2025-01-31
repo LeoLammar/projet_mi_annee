@@ -134,8 +134,9 @@ const RegisterPage: React.FC = () => {
             </button>
           </p>
         </div>
-        <Footer />
       </div>
+      <Footer />
+
     </div>
   );
 };
